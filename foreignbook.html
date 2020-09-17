@@ -1,0 +1,2445 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HHbookstore</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./css/foreignbookstyle.css" rel="stylesheet">
+        <link href="./images/iconlogo.png" rel="shortcut icon" >
+        <script src="https://kit.fontawesome.com/cb7c5d22b4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/foreignbookscript.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="logo">
+                <a href="./index.html"> <img src="./images/logo.png" alt="HHbook"></a>
+                </div>
+                <div class="box">                       
+                    <input type="search" id="search" placeholder="Tìm kiếm sản phẩm mong muốn">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+
+                <div class="icons">
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-bell"></i>
+                            <p>Thông báo</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-shopping-cart"></i>
+                            <p>Giỏ hàng</p>
+                        </div>
+                    </a>
+                    <a href="#" onclick="openForm()">
+                        <div class="icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <p>Đăng nhập</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </header>
+        <input type="button" value="-" class="navbtn" onClick="openNav()"/>
+        <nav class="header" id="navPopup">
+            <ul class="menu">
+                <li class="submenu"><a href="./domesticbook.html">Sách Trong Nước</a>
+                    <ul class="subcontent">
+                        <li><a href="#">VĂN HỌC</a>
+                            <ul class="books">
+                                <li><a href="#">Tiểu Thuyết</a></li>
+                                <li><a href="#">Truyện Ngắn</a></li>
+                                <li><a href="#">Ngôn Tình</a></li>
+                                <li><a href="#">Light Novel</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KINH TẾ</a>
+                            <ul class="books">
+                                <li><a href="#">Bài Học Kinh Doanh</a></li>
+                                <li><a href="#">Quản Trị-Lãnh Đạo</a></li>
+                                <li><a href="#">Marketing-Bán Hàng</a></li>
+                                <li><a href="#">Phân Tích Kinh Tế</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KỸ NĂNG SỐNG</a>
+                            <ul class="books">
+                                <li><a href="#">Kỹ Năng Sống</a></li>
+                                <li><a href="#">Rèn Luyện Nhân Cách</a></li>
+                                <li><a href="#">Tâm Lý</a></li>
+                                <li><a href="#">Sách Cho Tuổi Mới Lớn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NUÔI DẠY CON</a>
+                            <ul class="books">
+                                <li><a href="#">Cẩm Nang Làm Mẹ</a></li>
+                                <li><a href="#">Phương Pháp Giáo Dục Trẻ</a></li>
+                                <li><a href="#">Phát Triển Trí Tuệ Cho Trẻ</a></li>
+                                <li><a href="#">Phát Triển Kỹ Năng Cho Trẻ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SÁCH THIẾU NHI</a>
+                            <ul class="books">
+                                <li><a href="#">Manga-Comic</a></li>
+                                <li><a href="#">Kiến Thức Bách Khoa</a></li>
+                                <li><a href="#">Truyện Tranh Cho Trẻ</a></li>
+                                <li><a href="#">Vừa Học Vừa Chơi </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TIỂU SỬ - HỒI KÝ</a>
+                            <ul class="books">
+                                <li><a href="#">Câu Chuyện Cuộc Đời</a></li>
+                                <li><a href="#">Chính Trị</a></li>
+                                <li><a href="#">Kinh Tế</a></li>
+                                <li><a href="#">Nghệ Thuật Giải Trí</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GIÁO KHOA</a>
+                            <ul class="books">
+                                <li><a href="#">Sách Giáo Khoa</a></li>
+                                <li><a href="#">Sách Tham Khảo</a></li>
+                                <li><a href="#">Luyện Thi ĐH-CĐ</a></li>
+                                <li><a href="#">Mẫu Giáo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NGOẠI NGỮ</a>
+                            <ul class="books">
+                                <li><a href="#">Tiếng Anh</a></li>
+                                <li><a href="#">Tiếng Nhật</a></li>
+                                <li><a href="#">Tiếng Trung</a></li>
+                                <li><a href="#">Tiếng Hàn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="submenu"><a href="#">Sách Nước Ngoài</a>
+                    <ul class="subcontent">
+                        <li><a href="#">FICTION</a>
+                            <ul class="books">
+                                <li><a href="#">Comteporary Fiction</a></li>
+                                <li><a href="#">Romace</a></li>
+                                <li><a href="#">Fantasy</a></li>
+                                <li><a href="#">Classics</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BUSSINESS</a>
+                            <ul class="books">
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Economics</a></li>
+                                <li><a href="#">Finance</a></li>
+                                <li><a href="#">Accouting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PERSONAL</a>
+                            <ul class="books">
+                                <li><a href="#">Popular Psychology</a></li>
+                                <li><a href="#">Personal Finance</a></li>
+                                <li><a href="#">Avice On Careers</a></li>
+                                <li><a href="#">Achieving Success</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CHILDREN'S BOOK</a>
+                            <ul class="books">
+                                <li><a href="#">Picture & Activity Books</a></li>
+                                <li><a href="#">Ficton (For Kid)</a></li>
+                                <li><a href="#">Education</a></li>
+                                <li><a href="#">Non-Fiction</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DICTIONARIES</a>
+                            <ul class="books">
+                                <li><a href="#">Dictionaries</a></li>
+                                <li><a href="#">Ficton (For Kid)</a></li>
+                                <li><a href="#">Education</a></li>
+                                <li><a href="#">Non-Fiction</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LANGUAGES</a>
+                            <ul class="books">
+                                <li><a href="#">Japanese Books</a></li>
+                                <li><a href="#">Chinese Books</a></li>
+                                <li><a href="#">Frech Books</a></li>
+                                <li><a href="#">English Books</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CATEGORIES</a>
+                            <ul class="books">
+                                <li><a href="#">Biography</a></li>
+                                <li><a href="#">Society & Social Sciences</a></li>
+                                <li><a href="#">Science & Geography</a></li>
+                                <li><a href="#">Food & Drink</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CATEGORIES</a>
+                            <ul class="books">
+                                <li><a href="#">Biography</a></li>
+                                <li><a href="#">Society & Social Sciences</a></li>
+                                <li><a href="#">Science & Geography</a></li>
+                                <li><a href="#">Food & Drink</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">VPP-Dụng Cụ Học Sinh</a>
+                    <ul class="subcontent">
+                        <li><a href="#">BÚT - VIẾT</a>
+                            <ul class="books">
+                                <li><a href="#">Bút Bi - Ruột Bút Bi</a></li>
+                                <li><a href="#">Bút Gel - Bút Nước</a></li>
+                                <li><a href="#">Bút Mực - Bút Máy</a></li>
+                                <li><a href="#">Bút Dạ Quang - Bút Chì</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DỤNG CỤ HỌC SINH</a>
+                            <ul class="books">
+                                <li><a href="#">Gôm - Tẩy</a></li>
+                                <li><a href="#">Gọt Bút Chì</a></li>
+                                <li><a href="#">Thước</a></li>
+                                <li><a href="#">Bộ Dụng Cụ Học Tập</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DỤNG CỤ VĂN PHÒNG</a>
+                            <ul class="books">
+                                <li><a href="#">Bìa - File Hồ Sơ</a></li>
+                                <li><a href="#">Kẹp Giấy - Kẹp Bướm</a></li>
+                                <li><a href="#">Đồ Bấm Kim - Kim Bấm</a></li>
+                                <li><a href="#">Bảng Tên - Cắm Bút</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DỤNG CỤ VẼ</a>
+                            <ul class="books">
+                                <li><a href="#">Bút Vẽ</a></li>
+                                <li><a href="#">Màu Vẽ</a></li>
+                                <li><a href="#">Khay - Cọ Vẽ</a></li>
+                                <li><a href="#">Tập Vẽ - Giấy Vẽ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM VỀ GIẤY</a>
+                            <ul class="books">
+                                <li><a href="#">Tập Vỡ - Sổ Tay Các Loại</a></li>
+                                <li><a href="#">Giấy Photo</a></li>
+                                <li><a href="#">Giấy Note</a></li>
+                                <li><a href="#">Giấy Màu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Dao Rọc Giấy</a></li>
+                                <li><a href="#">Kéo</a></li>
+                                <li><a href="#">Băng Keo</a></li>
+                                <li><a href="#">Bút Xóa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM ĐIỆN TỬ</a>
+                            <ul class="books">
+                                <li><a href="#">Máy Tính Cầm Tay</a></li>
+                                <li><a href="#">Đồng Hồ Bấm Giờ</a></li>
+                                <li><a href="#">Máy Chiếu</a></li>
+                                <li><a href="#">Máy fax</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BALO - CẶP SÁCH</a>
+                            <ul class="books">
+                                <li><a href="#">Balo Chống Gù</a></li>
+                                <li><a href="#">Balo Leo Núi</a></li>
+                                <li><a href="#">Cặp Quai Chéo</a></li>
+                                <li><a href="#">Balo Mini</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">Hành Trang Đến Trường</a>
+                    <ul class="subcontent">
+                        <li><a href="#">SÁCH GIÁO KHOA</a>
+                            <ul class="books">
+                                <li><a href="#">Mẫu Giáo</a></li>
+                                <li><a href="#">Tiểu Học</a></li>
+                                <li><a href="#">THCS</a></li>
+                                <li><a href="#">THPT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SÁCH THAM KHẢO</a>
+                            <ul class="books">
+                                <li><a href="#">Mẫu Giáo</a></li>
+                                <li><a href="#">Tiểu Học</a></li>
+                                <li><a href="#">THCS</a></li>
+                                <li><a href="#">THPT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LUYỆN THI THPTQG</a>
+                            <ul class="books">
+                                <li><a href="#">Luyện Thi Khối A00</a></li>
+                                <li><a href="#">Luyện Thi Khối B00</a></li>
+                                <li><a href="#">Luyện Thi Khối A01</a></li>
+                                <li><a href="#">Luyện Thi Khối D00</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GIÁO TRÌNH CĐ - ĐH</a>
+                            <ul class="books">
+                                <li><a href="#">Công Nghệ Thông Tin</a></li>
+                                <li><a href="#">Kinh Tế</a></li>
+                                <li><a href="#">Y Dược</a></li>
+                                <li><a href="#">Kỹ Thuật</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tài Liệu Sưu Tầm</a>
+                            <ul class="books">
+                                <li><a href="#">Toán Học</a></li>
+                                <li><a href="#">Văn Học</a></li>
+                                <li><a href="#">Hóa Học</a></li>
+                                <li><a href="#">Sinh Học</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Dao Rọc Giấy</a></li>
+                                <li><a href="#">Kéo</a></li>
+                                <li><a href="#">Băng Keo</a></li>
+                                <li><a href="#">Bút Xóa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM ĐIỆN TỬ</a>
+                            <ul class="books">
+                                <li><a href="#">Máy Tính Cầm Tay</a></li>
+                                <li><a href="#">Đồng Hồ Bấm Giờ</a></li>
+                                <li><a href="#">Máy Chiếu</a></li>
+                                <li><a href="#">Máy fax</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BALO - CẶP SÁCH</a>
+                            <ul class="books">
+                                <li><a href="#">Balo Chống Gù</a></li>
+                                <li><a href="#">Balo Leo Núi</a></li>
+                                <li><a href="#">Cặp Quai Chéo</a></li>
+                                <li><a href="#">Balo Mini</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">Đồ Chơi</a>
+                    <ul class="subcontent">
+                        <li><a href="#">ĐỒ CHƠI NỔI BẬT</a>
+                            <ul class="books">
+                                <li><a href="#">Xếp Hình - Lắp Ghép</a></li>
+                                <li><a href="#">Đồ Chơi - Giáo Dục</a></li>
+                                <li><a href="#">Đồ Chơi - Điều Khiển</a></li>
+                                <li><a href="#">Board Game</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PHƯƠNG TIỆN CÁC LOẠI</a>
+                            <ul class="books">
+                                <li><a href="#">Ô Tô</a></li>
+                                <li><a href="#">Máy Bay</a></li>
+                                <li><a href="#">Tàu Thủy</a></li>
+                                <li><a href="#">Phương Tiện Khác</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MÔ HÌNH CÁC LOẠI</a>
+                            <ul class="books">
+                                <li><a href="#">Mô Hình Giấy</a></li>
+                                <li><a href="#">Mô Hình Gỗ</a></li>
+                                <li><a href="#">Mô Hình Nhân Vật</a></li>
+                                <li><a href="#">Mô Hình Động Vật</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ CHƠI THEO PHIM</a>
+                            <ul class="books">
+                                <li><a href="#">My Little Pony</a></li>
+                                <li><a href="#">Paw Patrol</a></li>
+                                <li><a href="#">Super Wings</a></li>
+                                <li><a href="#">Chiến Thần Vô Cực</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BỘT NẶN - ĐẤT NẶN</a>
+                            <ul class="books">
+                                <li><a href="#">Slime</a></li>
+                                <li><a href="#">Đất Nặn Màu</a></li>
+                                <li><a href="#">Cát Nặn</a></li>
+                                <li><a href="#">Bột Kim Tuyến</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BÚP BÊ</a>
+                            <ul class="books">
+                                <li><a href="#">Búp Bê Con Trai</a></li>
+                                <li><a href="#">Búp Bê Con Gái</a></li>
+                                <li><a href="#">Đồ Trang Trí Búp Bê</a></li>
+                                <li><a href="#">Quần Áo Búp Bê</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gấu Bông</a>
+                            <ul class="books">
+                                <li><a href="#">Gấu To</a></li>
+                                <li><a href="#">Gấu Vừa</a></li>
+                                <li><a href="#">Gấu Nhỏ</a></li>
+                                <li><a href="#">Gấu Ôm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ CHƠI KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Đồ Chơi Tư Duy</a></li>
+                                <li><a href="#">Lego</a></li>
+                                <li><a href="#">Thế Giới Động Vật</a></li>
+                                <li><a href="#">Đồ Chơi Vận Động</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">Bách Hóa Online-Lưu Niệm</a>
+                    <ul class="subcontent">
+                        <li><a href="#">ĐỒ DÙNG CÁ NHÂN</a>
+                            <ul class="books">
+                                <li><a href="#">Túi - Ví Thời Trang</a></li>
+                                <li><a href="#">Đồng Hồ</a></li>
+                                <li><a href="#">Phụ Kiện Du Lịch</a></li>
+                                <li><a href="#">Phụ Kiện Tóc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ ĐIỆN GIA DỤNG</a>
+                            <ul class="books">
+                                <li><a href="#">Đèn Bàn</a></li>
+                                <li><a href="#">Đèn Ngủ</a></li>
+                                <li><a href="#">Đèn Pin</a></li>
+                                <li><a href="#">Đèn Trang Trí</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NHÀ CỬA ĐỜI SỐNG</a>
+                            <ul class="books">
+                                <li><a href="#">Ly, Cốc, Bình Nước</a></li>
+                                <li><a href="#">Hộp Đựng Đồ Cá Nhân</a></li>
+                                <li><a href="#">Trang Trí Nhà Cửa</a></li>
+                                <li><a href="#">Sửa Chữa Nhà Cửa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LƯU NIỆM</a>
+                            <ul class="books">
+                                <li><a href="#">Móc Khóa</a></li>
+                                <li><a href="#">Gương - Lược</a></li>
+                                <li><a href="#">Khung Hình</a></li>
+                                <li><a href="#">Tượng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ ĐIỆN - CƠ GIA DỤNG</a>
+                            <ul class="books">
+                                <li><a href="#">Máy Khoan</a></li>
+                                <li><a href="#">Máy Bơm</a></li>
+                                <li><a href="#">Máy Hút Bụi</a></li>
+                                <li><a href="#">Máy Cưa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">THIẾT BỊ THÔNG MINH</a>
+                            <ul class="books">
+                                <li><a href="#">Robot Hút Bụi</a></li>
+                                <li><a href="#">Robot Lau Nhà</a></li>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Cảm Biến Hồng Ngoại</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SP NĂNG LƯỢNG</a>
+                            <ul class="books">
+                                <li><a href="#">Pin Năng Lượng Mặt Trời</a></li>
+                                <li><a href="#">Pin Tiểu</a></li>
+                                <li><a href="#">Pin Đại</a></li>
+                                <li><a href="#">Ắc Quy</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Thực Phẩm</a></li>
+                                <li><a href="#">Thiết Bị Số</a></li>
+                                <li><a href="#">Quạt Các Loại</a></li>
+                                <li><a href="#">Dụng Cụ Nhà Bếp</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#"><i class="fas fa-globe-americas"></i></a>
+                    <ul class="subcontent">
+                        <li class="trans"><a href="#">VIETNAMESE</a></li>
+                        <li class="trans"><a href="#">ENGLISH</a></li>
+                        <li class="trans"><a href="#">JAPANESE</a></li>
+                        <li class="trans"><a href="#">CHINESE</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <input type="button" value="X" class="navbtn" onClick="closeNav()"/>
+        </nav>
+        <!--POPUPLOGIN-->
+        <form class="content" id="id1">
+            <div class="login">
+                <h3>ĐĂNG NHẬP</h3>
+                <div class="flex">
+                    <div class="acc">
+                        <div class="block"> 
+                            <h4>Số điện thoại/Email</h4>
+                            <input type="text" placeholder="Nhập số điện thoại hoặc email" id="email"/>
+                        </div>
+                        <div class="block">
+                            <h4>Mật khẩu</h4>
+                            <input type="password" placeholder="Nhập mật khẩu" id="mk"/>
+                        </div>
+                        <a href="./recoverpwd.html" class="fgpwd"><h5 class="fgpwdtext">Quên mật khẩu?</h5></a>
+                        <input type="button" value="Đăng nhập" onclick="loGin()" class="dnbtn"/>
+                        <input type="button" value="Trở lại" onclick="closeForm()" class="thbtn"/>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="social">
+                        <h3>Hoặc</h3>
+                        <a href="#" class="fb">
+                            <i class="fa fa-facebook fa-fw"></i> Đăng nhập với Facebook
+                        </a>
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter fa-fw"></i> Đăng nhập với Twitter
+                        </a>
+                        <a href="#" class="google">
+                            <i class="fa fa-google fa-fw"> </i> Đăng nhập với Google
+                        </a>
+                    </div>
+                </div>
+                <div class="endform">
+                    Chưa có tài khoản vui lòng <input type="button" value="Đăng ký" onclick="openForm1()" class="dkbtn"/>
+                </div>            
+            </div>
+        </form>
+        <form class="content" id="id2">
+            <div class="register">
+                <h2>ĐĂNG KÝ</h2>
+                <div class="block"> 
+                    <h4>Số điện thoại/Email</h4>
+                    <input type="text" placeholder="Nhập số điện thoại/Email" id="phone"/>
+                </div>
+                <div class="block"> 
+                    <h4>Mật khẩu</h4>
+                    <input type="text" placeholder="Nhập mật khẩu" id="otp"/>
+                </div>
+                <div class="block"> 
+                    <h4>Xác nhận mật khẩu</h4>
+                    <input type="text" placeholder="Nhập lại mật khẩu" id="mk1"/>
+                </div>
+                <input type="button" value="Đăng ký" onclick="reGister()" class="dkbtn1"/>
+                <input type="button" value="Trở lại" onclick="closeForm1()" class="thbtn1"/>
+            </div>
+        </form>
+        <!--end-->
+
+
+        <audio autoplay>
+            <source src="./audio/welcome.mp3">
+        </audio>
+        
+        <a id="scrollTop"><img src="./images/top.png" alt="top"/></a> 
+
+        <input type="button" value=">" class="share-on" onClick="shareOn()"/>
+    
+        <div class="share" id="share-on-off">
+        <ul>
+            <li> <a href="http://www.facebook.com/sharer/sharer.php?u=https://www.fahasa.com/?attempt=1"><i class="fab fa-facebook"></i></a> </li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li>  <a href="#"><i class="fas fa-envelope"></i></a></li>
+            <li>   <a href="#"><i class="fab fa-google-plus"></i></a> </li>
+            <li> <a href="#"><i class="fab fa-pinterest"></i></a></li>     
+                <input type="button" value="<" class="share-off" onClick="shareOff()"/>
+            </ul>
+        </div>
+        <div class="watched">
+            <ul class="watched1">
+                <li class="watched2">
+                <span class="clock">
+                    <img src="./images/iconclock.png"/>
+                </span>
+                <span class="title">Sản phẩm đã xem</span>
+                </li>
+            </ul>    
+        </div>
+
+            <section>
+                <!-- CAROSEL -->
+                <div class="h1">
+                    <div class="banner">
+                        <div class="container">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                <img src="./images/slide1.jpg" alt="banner1">
+                                </div>
+                                <div class="item">
+                                <img src="./images/slide2.jpg" alt="banner2">
+                                </div>
+                                <div class="item">
+                                <img src="./images/slide3.jpg" alt="banner3">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                            <div class="banners">
+                                <img src="./images/banner2.png" alt="banner">
+                            </div>
+                        </div>
+                        <div class="bannerright">
+                            <div class="banner2">
+                                <a href="#"><img src="./images/bannermini.png" alt="banner"></a>
+                            </div>
+                            <div class="banner2">
+                                <a href="#"><img src="./images/bannermini2.jpg" alt="banner"></a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!-- end -->
+                <div class="imgicons">
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/flashsale.png" alt="flashsale"></a>
+                        <h5>Flash Sale</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/dealhot.png" alt="dealhot"></a>
+                        <h5>Deal Hot</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/hpoint.png" alt="hpoint"></a>
+                        <h5>HH-Point</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/goiy.png" alt="goiy"></a>
+                        <h5>Gợi Ý</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/dochoi.png" alt="dochoi"></a>
+                        <h5>Đồ Chơi</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/vpp.png" alt="vanphongpham"></a>
+                        <h5>Văn Phòng Phẩm</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/vanhoc.png" alt="vanhoc"></a>
+                        <h5>Văn Học</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/thieunhi.png" alt="thieunhi"></a>
+                        <h5>Thiếu Nhi</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/tamly.png" alt="tamlykynang"></a>
+                        <h5>Tâm Lý</h5>
+                    </div>
+                    <div class="imgicon">
+                        <a href="#"><img src="./images/kinhte.png" alt="kinhte"></a>
+                        <h5>Kinh Tế</h5>
+                    </div>      
+                </div>
+                
+                <div class="bannerads">
+                    <a href="#">
+                        <img src="./images/banner1.jpg" alt="khuyenmai1">
+                    </a>
+                </div>
+                
+                <div class="book-title">
+                    <h4><i class="fas fa-book"></i>   Sách Nước Ngoài</h4> 
+                    
+                    </div> 
+                    <input type="button" value="+" class="book_on_off" onClick="book_title_on()"/>
+
+                <nav class="chon" >
+                    <ul id="move">
+                        <li><a href="#VH">FICTION</a></li>
+                        <li><a href="#KT">BUSSINESS</a></li>
+                        <li><a href="#TL">PERSONAL</a></li>
+                        <li><a href="#NDC">CILDREN'S BOOK</a></li>
+                        <li><a href="#TN">DICTIONARIES</a></li>
+                        <li><a href="#TS">LANGUAGES</a></li>
+                        <li><a href="#GK">CATEGORIES</a></li>
+                        <input type="button" value="x" class="book_on_off1" onClick="book_title_off()"/>
+                    </ul>
+                </nav>
+                <div class="books"> 
+                    <div class="title" id="VH">
+                        <h3><i class="fas fa-book-open"></i>  FICTION</h3>
+                    </div>
+                    <div class="content">
+                        <figure>
+                            <a href="#">
+                                <img src="./images/f1.jpg" alt="book">
+                                <figcaption class="tt">Five People You Meet in Heaven</figcaption>
+                                    <div class="money-buy">
+                                        <div class="money">
+                                    <figcaption class="price">151.000đ</figcaption>
+                                    <figcaption class="thruprice">170.000đ</figcaption>
+                                </div>
+                                    <div class="buy">
+                                        <a href="#" class="buy-now" role="button">Buy Now</a>
+                                    </div>                           
+                                </div>                      
+                            </a>
+                        </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f2.jpg" alt="book">
+                            <figcaption class="tt">Pride and Prejudice</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">84.000đ</figcaption>
+                            <figcaption class="thruprice">99.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                        <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>                     
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f3.jpg" alt="book">
+                            <figcaption class="tt">The Old Man and The Sea</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">127.000đ</figcaption>
+                            <figcaption class="thruprice">142.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                             
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f4.jpg" alt="book">
+                            <figcaption class="tt">The Da Vinci Code</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">134.000đ</figcaption>
+                            <figcaption class="thruprice">142.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                             
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f5.jpg" alt="book">
+                            <figcaption class="tt">The Sorrow Of War</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">60.000đ</figcaption>
+                            <figcaption class="thruprice">70.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                          
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f6.jpg" alt="book">
+                            <figcaption class="tt">Norwegian Wood (Exp)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">95.000đ</figcaption>
+                            <figcaption class="thruprice">120.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f7.jpg" alt="book">
+                            <figcaption class="tt">The Adventures of Tom Sawyer (Collins Classics)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">87.000đ</figcaption>
+                            <figcaption class="thruprice">109.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f8.jpg" alt="book">
+                            <figcaption class="tt">Sherlock Holmes: The Complete Novels and Stories</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">68.000đ</figcaption>
+                            <figcaption class="thruprice">79.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                            
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f9.jpg" alt="book">
+                            <figcaption class="tt">And The Mountains Echoed</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">55.000đ</figcaption>
+                            <figcaption class="thruprice">69.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f10.jpg" alt="book">
+                            <figcaption class="tt">Eleanor Oliphant Is Completely Fine</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">106.000đ</figcaption>
+                            <figcaption class="thruprice">129.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                            
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f11.jpg" alt="book">
+                            <figcaption class="tt">Sputnik Sweetheart</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">148.000đ</figcaption>
+                            <figcaption class="thruprice">156.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f12.jpg" alt="book">
+                            <figcaption class="tt">Sherlock Holmes: The Complete Novels and Stories, Vol. 1</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">37.000đ</figcaption>
+                            <figcaption class="thruprice">50.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                             
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f13.jpg" alt="book">
+                            <figcaption class="tt">The Notebook</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">117.000đ</figcaption>
+                            <figcaption class="thruprice">138.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f14.jpg" alt="book">
+                            <figcaption class="tt">Sense and Sensibility (Collins Classics)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">76.000đ</figcaption>
+                            <figcaption class="thruprice">96.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/f15.jpg" alt="book">
+                            <figcaption class="tt">Why I Left Goldman Sachs</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">122.000đ</figcaption>
+                            <figcaption class="thruprice">189.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                          
+                    </div>               
+                        </a>
+                    </figure>               
+                </div>
+                <div class="xemthem1">
+                    <div class="xemthem">
+                        <a href="#">
+                            <h5>Xem Thêm</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bannerads">
+                <a href="#">
+                    <img src="./images/banner2.png" alt="khuyenmai2">
+                </a>
+            </div>
+            <div class="books">
+                <div class="title" id="KT">
+                    <h3><i class="fas fa-book-open"></i>  BUSSINESS</h3>
+                </div>
+                <div class="content">
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b1.jpg" alt="book">
+                            <figcaption class="tt">Good To Great</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">379.000đ</figcaption>
+                            <figcaption class="thruprice">425.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                              
+                    </div>               
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b2.jpg" alt="book">
+                            <figcaption class="tt">How To Win Friends & Influence People</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">252.000đ</figcaption>
+                            <figcaption class="thruprice">297.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                               
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b3.jpg" alt="book">
+                            <figcaption class="tt">Currency Wars: The Making of the Next Global Crisis</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">88.000đ</figcaption>
+                            <figcaption class="thruprice">119.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                              
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b4.jpg" alt="book">
+                            <figcaption class="tt">A Mind for Numbers</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">306.000đ</figcaption>
+                            <figcaption class="thruprice">383.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                          
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b5.jpg" alt="book">
+                            <figcaption class="tt">Originals</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">238.000đ</figcaption>
+                            <figcaption class="thruprice">299.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                             
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b6.jpg" alt="book">
+                            <figcaption class="tt">The Black Swan: Second Edition</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">88.000đ</figcaption>
+                            <figcaption class="thruprice">98.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                               
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b7.jpg" alt="book">
+                            <figcaption class="tt">Leadership Is Language</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">108.000đ</figcaption>
+                            <figcaption class="thruprice">148.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b8.jpg" alt="book">
+                            <figcaption class="tt">Bad Blood: Secrets and Lies in a Silicon Valley Startup</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">94.000đ</figcaption>
+                            <figcaption class="thruprice">168.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b9.jpg" alt="book">
+                            <figcaption class="tt"> The Harvard Business Review Leader's Handbook</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">442.000đ</figcaption>
+                            <figcaption class="thruprice">500.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b10.jpg" alt="book">
+                            <figcaption class="tt">Grit</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">97.000đ</figcaption>
+                            <figcaption class="thruprice">125.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b11.jpg" alt="book">
+                            <figcaption class="tt">HBR's 10 Must Reads on Leadership</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">96.000đ</figcaption>
+                            <figcaption class="thruprice">149.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b12.jpg" alt="book">
+                            <figcaption class="tt">HBR's 10 Must Reads on Strategy</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">138.000đ</figcaption>
+                            <figcaption class="thruprice">179.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b13.jpg" alt="book">
+                            <figcaption class="tt">Finding the Next Starbucks</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">272.000đ</figcaption>
+                            <figcaption class="thruprice">230.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b14.jpg" alt="book">
+                            <figcaption class="tt">The 80/20 Principle</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">178.000đ</figcaption>
+                            <figcaption class="thruprice">205.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/b15.jpg" alt="book">
+                            <figcaption class="tt">HBR Guides Boxed Set (7 Books) (HBR Guide Series)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">1.690.000đ</figcaption>
+                            <figcaption class="thruprice">1.794.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                </div>
+                <div class="xemthem1">
+                    <div class="xemthem">
+                        <a href="#">
+                            <h5>Xem Thêm</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="books">
+                <div class="title" id="TL">
+                    <h3><i class="fas fa-book-open"></i>  PERSONAL</h3>
+                </div>
+                <div class="content">
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p1.jpg" alt="book">
+                            <figcaption class="tt">How to Win Friends and Influence People</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">59.000đ</figcaption>
+                            <figcaption class="thruprice">76.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                              
+                    </div>               
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p2.jpg" alt="book">
+                            <figcaption class="tt">The Power Of Habit</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">122.000đ</figcaption>
+                            <figcaption class="thruprice">189.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                               
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p3.jpg" alt="book">
+                            <figcaption class="tt">Who Moved My Cheese</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">71.000đ</figcaption>
+                            <figcaption class="thruprice">89.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                              
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p4.jpg" alt="book">
+                            <figcaption class="tt">The Power of Introverts in a World That Can't Stop Talking</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">126.000đ</figcaption>
+                            <figcaption class="thruprice">133.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                          
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p5.jpg" alt="book">
+                            <figcaption class="tt">Search Inside Yourself</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">38.000đ</figcaption>
+                            <figcaption class="thruprice">99.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                             
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p6.jpg" alt="book">
+                            <figcaption class="tt">
+                                How To Stop Worrying & Start Living</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">78.000đ</figcaption>
+                            <figcaption class="thruprice">98.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                               
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p7.jpg" alt="book">
+                            <figcaption class="tt">The Psychology of Human Relationships</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">58.000đ</figcaption>
+                            <figcaption class="thruprice">98.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p8.jpg" alt="book">
+                            <figcaption class="tt">Gifts of Imperfection</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">64.000đ</figcaption>
+                            <figcaption class="thruprice">88.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p9.jpg" alt="book">
+                            <figcaption class="tt">13 Things Mentally Strong People Don't Do</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">62.000đ</figcaption>
+                            <figcaption class="thruprice">81.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p10.jpg" alt="book">
+                            <figcaption class="tt">1000+ Little Things</figcaption>
+                            <div class="money-buy">
+                                    <div class="money">
+                                        <figcaption class="price">66.000đ</figcaption>
+                                        <figcaption class="thruprice">80.000đ</figcaption>
+                                    </div>
+                                <div class="buy">
+                                    <a href="#" class="buy-now" role="button">Buy Now</a>
+                                </div>                           
+                            </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p11.jpg" alt="book">
+                            <figcaption class="tt">RICH DAD'S CASHFLOW QUADRANT (INTL)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">96.000đ</figcaption>
+                            <figcaption class="thruprice">109.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p12.jpg" alt="book">
+                            <figcaption class="tt">Second Chance</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">78.000đ</figcaption>
+                            <figcaption class="thruprice">99.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p13.jpg" alt="book">
+                            <figcaption class="tt">Influence: The Psychology of Persuasion, Revised Edition</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">133.000đ</figcaption>
+                            <figcaption class="thruprice">169.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p14.jpg" alt="book">
+                            <figcaption class="tt">The Richest Man in Babylon</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">100.000đ</figcaption>
+                            <figcaption class="thruprice">125.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/p15.jpg" alt="book">
+                            <figcaption class="tt">How to Write a Marketing Plan</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">159.000đ</figcaption>
+                            <figcaption class="thruprice">199.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                </div>
+                <div class="xemthem1">
+                    <div class="xemthem">
+                        <a href="#">
+                            <h5>Xem Thêm</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+
+            <div class="books">
+                <div class="title" id="NDC">
+                    <h3><i class="fas fa-book-open"></i>  CILDREN'S</h3>
+                </div>
+                <div class="content">
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c1.jpg" alt="book">
+                            <figcaption class="tt">Wonder</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">45.000đ</figcaption>
+                            <figcaption class="thruprice">69.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                              
+                    </div>               
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c2.jpg" alt="book">
+                            <figcaption class="tt">I'm Proud To Be A Vietnamese</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">118.000đ</figcaption>
+                            <figcaption class="thruprice">149.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                               
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c3.jpg" alt="book">
+                            <figcaption class="tt">Diary Of A Wimpy Kid - Book 1 (Penguin Books UK)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">128.000đ</figcaption>
+                            <figcaption class="thruprice">159.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                              
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c4.jpg" alt="book">
+                            <figcaption class="tt">Diary Of Wimpy Kid Movie Diary</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">86.000đ</figcaption>
+                            <figcaption class="thruprice">93.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                          
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c5.jpg" alt="book">
+                            <figcaption class="tt">Diary Of A Wimpy Kid: Do-It-Yourself</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">128.000đ</figcaption>
+                            <figcaption class="thruprice">159.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                             
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c6.jpg" alt="book">
+                            <figcaption class="tt">Awful Auntie Paperback</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">124.000đ</figcaption>
+                            <figcaption class="thruprice">156.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                               
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c7.jpg" alt="book">
+                            <figcaption class="tt">Diary Of A Wimpy Kid - Box Of Books</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">98.000đ</figcaption>
+                            <figcaption class="thruprice">108.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c8.jpg" alt="book">
+                            <figcaption class="tt">My First Storytime: Princess and the Pea</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">67.000đ</figcaption>
+                            <figcaption class="thruprice">88.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c9.jpg" alt="book">
+                            <figcaption class="tt">Valdor: Birth Of The Imperium (The Horus Heresy)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">82.000đ</figcaption>
+                            <figcaption class="thruprice">99.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c10.jpg" alt="book">
+                            <figcaption class="tt">The Way Things Work Now</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">89.000đ</figcaption>
+                            <figcaption class="thruprice">125.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c11.jpg" alt="book">
+                            <figcaption class="tt">Disney Pixar - Finding Nemo</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">56.000đ</figcaption>
+                            <figcaption class="thruprice">69.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c12.jpg" alt="book">
+                            <figcaption class="tt">DK Life Stories Leonardo da Vinci</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">38.000đ</figcaption>
+                            <figcaption class="thruprice">59.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c13.jpg" alt="book">
+                            <figcaption class="tt">Assassin's Creed: Unity</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">123.000đ</figcaption>
+                            <figcaption class="thruprice">159.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c14.jpg" alt="book">
+                            <figcaption class="tt">Ashes In The Snow (Movie Tie-In)</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">58.000đ</figcaption>
+                            <figcaption class="thruprice">65.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/c15.jpg" alt="book">
+                            <figcaption class="tt">100 Things To Know About Science</figcaption>
+                            <div class="money-buy">
+                                <div class="money">
+                            <figcaption class="price">49.000đ</figcaption>
+                            <figcaption class="thruprice">59.000đ</figcaption>
+                        </div>
+                        <div class="buy">
+                            <a href="#" class="buy-now" role="button">Buy Now</a>
+                        </div>                           
+                    </div>               
+                        </a>
+                    </figure> 
+                </div>
+                <div class="xemthem1">
+                    <div class="xemthem">
+                        <a href="#">
+                            <h5>Xem Thêm</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div class="books">
+                    <div class="title"id="TN">
+                        <h3><i class="fas fa-book-open"></i>  DICTIONARIES</h3>
+                    </div>
+                    <div class="content">
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d1.jpg" alt="book">
+                                <figcaption class="tt">Complete IELTS B1 Student's Book with answer (CD-ROM)</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">23.000đ</figcaption>
+                                <figcaption class="thruprice">49.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                              
+                        </div>               
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d2.jpg" alt="book">
+                                <figcaption class="tt">Mindset For IELTS</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">48.000đ</figcaption>
+                                <figcaption class="thruprice">49.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                               
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d3.jpg" alt="book">
+                                <figcaption class="tt">Oxford Learner’s Pocket Dictionary 4Ed</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">28.000đ</figcaption>
+                                <figcaption class="thruprice">39.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                              
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d4.jpg" alt="book">
+                                <figcaption class="tt">Family And Friends Special Edition 3</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">20.000đ</figcaption>
+                                <figcaption class="thruprice">23.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                          
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d5.jpg" alt="book">
+                                <figcaption class="tt">Family And Friends Special Edition 2 - Workbook</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">23.000đ</figcaption>
+                                <figcaption class="thruprice">29.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                             
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d6.jpg" alt="book">
+                                <figcaption class="tt">Family And Friends Special Edition 4 - Workbook</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">24.000đ</figcaption>
+                                <figcaption class="thruprice">28.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                               
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d7.jpg" alt="book">
+                                <figcaption class="tt">Advanced Grammar in Use Book</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">28.000đ</figcaption>
+                                <figcaption class="thruprice">38.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d8.jpg" alt="book">
+                                <figcaption class="tt">Oxford Learner’s Pocket Thesaurus Paperback</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">23.000đ</figcaption>
+                                <figcaption class="thruprice">28.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d9.jpg" alt="book">
+                                <figcaption class="tt">Smart Time Special Edition Grade 10</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">68.000đ</figcaption>
+                                <figcaption class="thruprice">80.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d10.jpg" alt="book">
+                                <figcaption class="tt">Math In My World 2 (Tái Bản)</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">20.000đ</figcaption>
+                                <figcaption class="thruprice">25.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d11.jpg" alt="book">
+                                <figcaption class="tt">Complete IELTS B1 Workbook with answer & Audio CD</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">36.000đ</figcaption>
+                                <figcaption class="thruprice">49.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d12.jpg" alt="book">
+                                <figcaption class="tt">Complete IELTS B2 Student's Book with answer & CD-Rom</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">20.000đ</figcaption>
+                                <figcaption class="thruprice">21.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d13.jpg" alt="book">
+                                <figcaption class="tt">Solution Grade 6</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">23.000đ</figcaption>
+                                <figcaption class="thruprice">29.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d14.jpg" alt="book">
+                                <figcaption class="tt">Close-Up B1 Student Book + Online Student Zone</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">28.000đ</figcaption>
+                                <figcaption class="thruprice">29.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/d15.jpg" alt="book">
+                                <figcaption class="tt">Family And Friends Special Edition 5 - Workbook</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">21.000đ</figcaption>
+                                <figcaption class="thruprice">22.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                    </div>
+                    <div class="xemthem1">
+                        <div class="xemthem">
+                            <a href="#">
+                                <h5>Xem Thêm</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="books">
+                    <div class="title" id="TS">
+                        <h3><i class="fas fa-book-open"></i> LANGUAGES</h3>
+                    </div>
+                    <div class="content">
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn1.jpg" alt="book">
+                                <figcaption class="tt">Giải Thích Ngữ Pháp Tiếng Anh Với Bài Tập Và Đáp Án</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">144.000đ</figcaption>
+                                <figcaption class="thruprice">180.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                              
+                        </div>               
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn2.jpg" alt="book">
+                                <figcaption class="tt">Cambridge Ielts 14 Academic With Answers (Savina)</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">133.000đ</figcaption>
+                                <figcaption class="thruprice">190.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                               
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn3.jpg" alt="book">
+                                <figcaption class="tt">Cambridge Ielts 13 Academic With Answers (Savina)</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">133.000đ</figcaption>
+                                <figcaption class="thruprice">140.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                              
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn4.jpg" alt="book">
+                                <figcaption class="tt">Hackers Toeic Vocabulary</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">199.000đ</figcaption>
+                                <figcaption class="thruprice">224.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                          
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn5.jpg" alt="book">
+                                <figcaption class="tt">25 Chuyên Đề Ngữ Pháp Tiếng Anh Trọng Tâm - Tập 1</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">88.000đ</figcaption>
+                                <figcaption class="thruprice">99.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                             
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn6.jpg" alt="book">
+                                <figcaption class="tt">Hackers Ielts: Reading</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">190.000đ</figcaption>
+                                <figcaption class="thruprice">160.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                               
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn7.jpg" alt="book">
+                                <figcaption class="tt">Tự Học 2000 Từ Vựng Tiếng Anh Theo Chủ Đề (Tái Bản)</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">42.000đ</figcaption>
+                                <figcaption class="thruprice">65.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn8.jpg" alt="book">
+                                <figcaption class="tt">20 Bộ Đề Đọc Hiểu Thi Năng Lực Tiếng Anh</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">79.000đ</figcaption>
+                                <figcaption class="thruprice">88.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn9.jpg" alt="book">
+                                <figcaption class="tt">Ngữ Pháp Tiếng Anh</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">62.000đ</figcaption>
+                                <figcaption class="thruprice">80.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn10.jpg" alt="book">
+                                <figcaption class="tt">Tiếng Hàn Tổng Hợp Dành Cho Người Việt Nam</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">97.000đ</figcaption>
+                                <figcaption class="thruprice">150.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn11.jpg" alt="book">
+                                <figcaption class="tt">Hackers Ielts: Listening</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">139.000đ</figcaption>
+                                <figcaption class="thruprice">149.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn12.jpg" alt="book">
+                                <figcaption class="tt">Luyện Viết Chữ Nhớ Từ Vựng 3</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">22.000đ</figcaption>
+                                <figcaption class="thruprice">35.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn13.jpg" alt="book">
+                                <figcaption class="tt">How To Crack The Ielts Speaking Test - Part 1</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">239.000đ</figcaption>
+                                <figcaption class="thruprice">299.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn14.jpg" alt="book">
+                                <figcaption class="tt">Brain Booster</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">178.000đ</figcaption>
+                                <figcaption class="thruprice">295.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/nn15.jpg" alt="book">
+                                <figcaption class="tt">Luyện Viết Chữ Nhớ Từ Vựng 5</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">29.000đ</figcaption>
+                                <figcaption class="thruprice">35.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                    </div>
+                    <div class="xemthem1">
+                        <div class="xemthem">
+                            <a href="#">
+                                <h5>Xem Thêm</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="books">
+                    <div class="title" id="GK">
+                        <h3><i class="fas fa-book-open"></i>  CATEGORIES</h3>
+                    </div>
+                    <div class="content">
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca1.jpg" alt="book">
+                                <figcaption class="tt">Complete IELTS B1 Student's Book with answer (CD-ROM)</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">29.000đ</figcaption>
+                                <figcaption class="thruprice">31.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                              
+                        </div>               
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca2.jpg" alt="book">
+                                <figcaption class="tt">Sapiens : A Brief History of Humankind</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">11.000đ</figcaption>
+                                <figcaption class="thruprice">12.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                               
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca3.jpg" alt="book">
+                                <figcaption class="tt">Mindset For IELTS</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">30.000đ</figcaption>
+                                <figcaption class="thruprice">39.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                              
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca4.jpg" alt="book">
+                                <figcaption class="tt">Oxford Learner’s Pocket Dictionary 4Ed</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">8.000đ</figcaption>
+                                <figcaption class="thruprice">9.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                          
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca5.jpg" alt="book">
+                                <figcaption class="tt">Family And Friends Special Edition 3</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">23.000đ</figcaption>
+                                <figcaption class="thruprice">24.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                             
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca6.jpg" alt="book">
+                                <figcaption class="tt">Smart Time Special Edition Grade 10</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">36.000đ</figcaption>
+                                <figcaption class="thruprice">38.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                               
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca7.jpg" alt="book">
+                                <figcaption class="tt">21 Lessons for the 21st Century</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">38.000đ</figcaption>
+                                <figcaption class="thruprice">48.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca8.jpg" alt="book">
+                                <figcaption class="tt">Complete IELTS B2 Student's Book with answer & CD-Rom</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">38.000đ</figcaption>
+                                <figcaption class="thruprice">48.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca9.jpg" alt="book">
+                                <figcaption class="tt">Close-Up B1 Student Book + Online Student Zone</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">12.000đ</figcaption>
+                                <figcaption class="thruprice">14.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca10.jpg" alt="book">
+                                <figcaption class="tt">Solution Grade 8</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">9.000đ</figcaption>
+                                <figcaption class="thruprice">10.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca11.jpg" alt="book">
+                                <figcaption class="tt">Solution Grade 10</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">28.000đ</figcaption>
+                                <figcaption class="thruprice">30.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca12.jpg" alt="book">
+                                <figcaption class="tt">Math In My World 3</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">20.000đ</figcaption>
+                                <figcaption class="thruprice">21.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca13.jpg" alt="book">
+                                <figcaption class="tt">How to Win Friends and Influence People</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">80.000đ</figcaption>
+                                <figcaption class="thruprice">89.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca14.jpg" alt="book">
+                                <figcaption class="tt">Thinking, Fast and Slow</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">12.000đ</figcaption>
+                                <figcaption class="thruprice">13.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                        <figure>
+                            <a href="#">
+                                <img src="./images/ca15.jpg" alt="book">
+                                <figcaption class="tt">Oxford Advanced Learner's Dictionary</figcaption>
+                                <div class="money-buy">
+                                    <div class="money">
+                                <figcaption class="price">12.000đ</figcaption>
+                                <figcaption class="thruprice">14.000đ</figcaption>
+                            </div>
+                            <div class="buy">
+                                <a href="#" class="buy-now" role="button">Buy Now</a>
+                            </div>                           
+                        </div>               
+                            </a>
+                        </figure> 
+                    </div>
+                    <div class="xemthem1">
+                        <div class="xemthem">
+                            <a href="#">
+                                <h5>Xem Thêm</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsor">
+                    <img src="./images/runbanner.jpg" alt="sponsor"/>
+                </div>
+                <!-- SENDTOEMAIL -->
+                <div class="sendtoemail flex">
+                    <div class="sendbutton col30 flex">
+                        <div class="col20"><img src="./images/user.png" alt="user"/></div>
+                        <div class="col80"><a href="mailto: HHbook@gmail.com?subject=Thắc Mắc Về&body=Nội Dung: ">Gửi Thắc Mắc Của Bạn Cho Chúng Tôi</a></div>
+                    </div>
+                    <div class="map col70"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6378.968759192832!2d106.65510940858746!3d10.793043910543405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752934edfc0855%3A0x87819e9465e0a2e3!2zMzUsIDI4IEzDqiBCw6xuaCwgUGjGsOG7nW5nIDQsIFTDom4gQsOsbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1600068575813!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                </div>
+                <!-- end -->
+        </section>
+        <input type="button" value="-" class="navbtn" onClick="openFoot()"/>
+        <footer id="footer-off-on">
+            <input type="button" value="x" class="navbtn" onClick="closeFoot()"/>
+                <div class="head">
+                    <div id="th">
+                        <h4>Trang bán sách uy tín và chất lượng hàng đầu Việt Nam</h4>
+                    </div>
+                    <div id="td">
+                        <h4>HHbookstore</h4>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="leftfooter col30">
+                        <h4> Sách trực tuyến quốc gia </h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on()"/>
+                        <ul id="footer">
+                            <li>Chỉ đạo tổ chức: Bộ Thông tin và Truyền thông</li>
+                            <li>Đơn vị quản lý: Cục Xuất bản - In - Phát hành</li>
+                            <li>NXB Thông tin &amp; Truyền thông</li>
+                            <li>Đơn vị vận hành: Vitranet24</li>
+                            <li>Đơn vị hỗ trợ: Cục Tin học hóa</li>
+                            <input type="button" value="x" class="navbtn-foot" onClick="footer_off()"/>
+                        </ul>
+                    </div>
+                    <div class="col19">
+                        <h4>Quản lý tài khoản</h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on1()"/>
+                        <ul id="footer1">
+                            <li><a href="#">Tạo tài khoản </a></li>
+                            <li><a href="#">Quản lý đơn hàng</a></li>
+                            <li><a href="#">Đăng ký giới thiệu sách</a></li>
+                            <li><a href="#">Thay đổi thông tin tài khoản</a></li>
+                            <input type="button" value="x" class="navbtn-foot" onClick="footer_off1()"/>
+                        </ul>
+                    </div>
+                    <div class="col19">
+                        <h4>Giới thiệu</h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on2()"/>
+                        <ul id="footer2">
+                        <li><a href="#">Không gian chung</a></li>
+                        <li><a href="#">Khu sách</a></li>
+                        <li><a href="#">Ảnh - video</a></li>
+                        <li><a href="#">Sự kiện</a></li>
+                        <input type="button" value="x" class="navbtn-foot" onClick="footer_off2()"/>
+                        </ul>
+                    </div>
+                    <div class="col19">
+                        <h4>Hỗ trợ</h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on3()"/>
+                        <ul id="footer3"> 
+                            <li><a href="#">Quy định mua hàng</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Câu hỏi thường gặp</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                            <input type="button" value="x" class="navbtn-foot" onClick="footer_off3()"/>
+                        </ul>                                      
+                    </div>
+                    <div class="col15">
+                    <h4>Hotline:0247 300 1369</h4>     
+                    </div>
+                </div>
+                <div class="end">
+                    <div id="tt">
+                        <img src="./images/tt1.png" alt="TT"> 
+                        <img src="./images/tt2.png" alt="TT">
+                        <img src="./images/tt3.png" alt="TT">
+                        <img src="./images/tt4.png" alt="TT">
+                    </div>
+                    <div id="ht">
+                        <img src="./images/bo.jpg" alt="bo">
+                        <img src="./images/cmc_cloud.jpg" alt="CMC">
+                        <img src="./images/cucphathanh.jpg" alt="CPT">
+                        <img src="./images/cuctinhoa.jpg" alt="CTH">
+                        <img src="./images/layer1155.png" alt="VNPOST">
+                    </div>
+                </div>
+                </div>
+                <div class="author">
+                    <h5>&copy; Powered by NDH & NTH</h5>
+                </div>
+        </footer>
+    </body>
+</html>

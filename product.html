@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Balo Chống Gù 779</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <link href="./css/productstyle.css" rel="stylesheet"/>
+        <script src="./js/productscript.js"></script>
+        <link href="./images/iconlogo.png" rel="shortcut icon" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/cb7c5d22b4.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header id="GTT">
+            <div class="header">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="HHbook">
+                </div>
+    
+                <div class="box">                       
+                    <input type="search" id="search" placeholder="Tìm kiếm sản phẩm mong muốn">
+                    <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+    
+                <div class="icons">
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-bell"></i>
+                            <p>Thông báo</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon">
+                            <i class="fa fa-shopping-cart"></i>
+                            <p>Giỏ hàng</p>
+                        </div>
+                    </a>
+                    <a href="#" onclick="openForm()">
+                        <div class="icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <p>Đăng nhập</p>
+                        </div>
+                    </a>
+            </div>
+        </header>
+        <input type="button" value="-" class="navbtn" onClick="openNav()"/>
+        <nav id="navPopup">
+            <ul class="menu">
+                <li class="submenu"><a href="./domesticbook.html">Sách Trong Nước</a>
+                    <ul class="subcontent">
+                        <li><a href="#">VĂN HỌC</a>
+                            <ul class="books">
+                                <li><a href="#">Tiểu Thuyết</a></li>
+                                <li><a href="#">Truyện Ngắn</a></li>
+                                <li><a href="#">Ngôn Tình</a></li>
+                                <li><a href="#">Light Novel</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KINH TẾ</a>
+                            <ul class="books">
+                                <li><a href="#">Bài Học Kinh Doanh</a></li>
+                                <li><a href="#">Quản Trị-Lãnh Đạo</a></li>
+                                <li><a href="#">Marketing-Bán Hàng</a></li>
+                                <li><a href="#">Phân Tích Kinh Tế</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">KỸ NĂNG SỐNG</a>
+                            <ul class="books">
+                                <li><a href="#">Kỹ Năng Sống</a></li>
+                                <li><a href="#">Rèn Luyện Nhân Cách</a></li>
+                                <li><a href="#">Tâm Lý</a></li>
+                                <li><a href="#">Sách Cho Tuổi Mới Lớn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NUÔI DẠY CON</a>
+                            <ul class="books">
+                                <li><a href="#">Cẩm Nang Làm Mẹ</a></li>
+                                <li><a href="#">Phương Pháp Giáo Dục Trẻ</a></li>
+                                <li><a href="#">Phát Triển Trí Tuệ Cho Trẻ</a></li>
+                                <li><a href="#">Phát Triển Kỹ Năng Cho Trẻ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SÁCH THIẾU NHI</a>
+                            <ul class="books">
+                                <li><a href="#">Manga-Comic</a></li>
+                                <li><a href="#">Kiến Thức Bách Khoa</a></li>
+                                <li><a href="#">Truyện Tranh Cho Trẻ</a></li>
+                                <li><a href="#">Vừa Học Vừa Chơi</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TIỂU SỬ - HỒI KÝ</a>
+                            <ul class="books">
+                                <li><a href="#">Câu Chuyện Cuộc Đời</a></li>
+                                <li><a href="#">Chính Trị</a></li>
+                                <li><a href="#">Kinh Tế</a></li>
+                                <li><a href="#">Nghệ Thuật Giải Trí</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GIÁO KHOA - THAM KHẢO</a>
+                            <ul class="books">
+                                <li><a href="#">Sách Giáo Khoa</a></li>
+                                <li><a href="#">Sách Tham Khảo</a></li>
+                                <li><a href="#">Luyện Thi ĐH-CĐ</a></li>
+                                <li><a href="#">Mẫu Giáo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NGOẠI NGỮ</a>
+                            <ul class="books">
+                                <li><a href="#">Tiếng Anh</a></li>
+                                <li><a href="#">Tiếng Nhật</a></li>
+                                <li><a href="#">Tiếng Trung</a></li>
+                                <li><a href="#">Tiếng Hàn</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="./foreignbook.html">Sách Nước Ngoài</a>
+                    <ul class="subcontent">
+                        <li><a href="#">FICTION</a>
+                            <ul class="books">
+                                <li><a href="#">Comteporary Fiction</a></li>
+                                <li><a href="#">Romace</a></li>
+                                <li><a href="#">Fantasy</a></li>
+                                <li><a href="#">Classics</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BUSSINESS</a>
+                            <ul class="books">
+                                <li><a href="#">Management</a></li>
+                                <li><a href="#">Economics</a></li>
+                                <li><a href="#">Finance</a></li>
+                                <li><a href="#">Accouting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PERSONAL</a>
+                            <ul class="books">
+                                <li><a href="#">Popular Psychology</a></li>
+                                <li><a href="#">Personal Finance</a></li>
+                                <li><a href="#">Avice On Careers</a></li>
+                                <li><a href="#">Achieving Success</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CHILDREN'S BOOK</a>
+                            <ul class="books">
+                                <li><a href="#">Picture & Activity Books</a></li>
+                                <li><a href="#">Ficton (For Kid)</a></li>
+                                <li><a href="#">Education</a></li>
+                                <li><a href="#">Non-Fiction</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DICTIONARIES</a>
+                            <ul class="books">
+                                <li><a href="#">Dictionaries</a></li>
+                                <li><a href="#">Ficton (For Kid)</a></li>
+                                <li><a href="#">Education</a></li>
+                                <li><a href="#">Non-Fiction</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LANGUAGES</a>
+                            <ul class="books">
+                                <li><a href="#">Japanese Books</a></li>
+                                <li><a href="#">Chinese Books</a></li>
+                                <li><a href="#">Frech Books</a></li>
+                                <li><a href="#">English Books</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CATEGORIES</a>
+                            <ul class="books">
+                                <li><a href="#">Biography</a></li>
+                                <li><a href="#">Society & Social Sciences</a></li>
+                                <li><a href="#">Science & Geography</a></li>
+                                <li><a href="#">Food & Drink</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CATEGORIES</a>
+                            <ul class="books">
+                                <li><a href="#">Biography</a></li>
+                                <li><a href="#">Society & Social Sciences</a></li>
+                                <li><a href="#">Science & Geography</a></li>
+                                <li><a href="#">Food & Drink</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">VPP-Dụng Cụ Học Sinh</a>
+                     <ul class="subcontent">
+                        <li><a href="#">BÚT - VIẾT</a>
+                            <ul class="books">
+                                <li><a href="#">Bút Bi - Ruột Bút Bi</a></li>
+                                <li><a href="#">Bút Gel - Bút Nước</a></li>
+                                <li><a href="#">Bút Mực - Bút Máy</a></li>
+                                <li><a href="#">Bút Dạ Quang - Bút Chì</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DỤNG CỤ HỌC SINH</a>
+                            <ul class="books">
+                                <li><a href="#">Gôm - Tẩy</a></li>
+                                <li><a href="#">Gọt Bút Chì</a></li>
+                                <li><a href="#">Thước</a></li>
+                                <li><a href="#">Bộ Dụng Cụ Học Tập</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DỤNG CỤ VĂN PHÒNG</a>
+                            <ul class="books">
+                                <li><a href="#">Bìa - File Hồ Sơ</a></li>
+                                <li><a href="#">Kẹp Giấy - Kẹp Bướm</a></li>
+                                <li><a href="#">Đồ Bấm Kim - Kim Bấm</a></li>
+                                <li><a href="#">Bảng Tên - Cắm Bút</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">DỤNG CỤ VẼ</a>
+                            <ul class="books">
+                                <li><a href="#">Bút Vẽ</a></li>
+                                <li><a href="#">Màu Vẽ</a></li>
+                                <li><a href="#">Khay - Cọ Vẽ</a></li>
+                                <li><a href="#">Tập Vẽ - Giấy Vẽ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM VỀ GIẤY</a>
+                            <ul class="books">
+                                <li><a href="#">Tập Vỡ - Sổ Tay Các Loại</a></li>
+                                <li><a href="#">Giấy Photo</a></li>
+                                <li><a href="#">Giấy Note</a></li>
+                                <li><a href="#">Giấy Màu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Dao Rọc Giấy</a></li>
+                                <li><a href="#">Kéo</a></li>
+                                <li><a href="#">Băng Keo</a></li>
+                                <li><a href="#">Bút Xóa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM ĐIỆN TỬ</a>
+                            <ul class="books">
+                                <li><a href="#">Máy Tính Cầm Tay</a></li>
+                                <li><a href="#">Đồng Hồ Bấm Giờ</a></li>
+                                <li><a href="#">Máy Chiếu</a></li>
+                                <li><a href="#">Máy fax</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BALO - CẶP SÁCH</a>
+                            <ul class="books">
+                                <li><a href="#">Balo Chống Gù</a></li>
+                                <li><a href="#">Balo Leo Núi</a></li>
+                                <li><a href="#">Cặp Quai Chéo</a></li>
+                                <li><a href="#">Balo Mini</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">Hành Trang Đến Trường</a>
+                    <ul class="subcontent">
+                        <li><a href="#">SÁCH GIÁO KHOA</a>
+                            <ul class="books">
+                                <li><a href="#">Mẫu Giáo</a></li>
+                                <li><a href="#">Tiểu Học</a></li>
+                                <li><a href="#">THCS</a></li>
+                                <li><a href="#">THPT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SÁCH THAM KHẢO</a>
+                            <ul class="books">
+                                <li><a href="#">Mẫu Giáo</a></li>
+                                <li><a href="#">Tiểu Học</a></li>
+                                <li><a href="#">THCS</a></li>
+                                <li><a href="#">THPT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LUYỆN THI THPTQG</a>
+                            <ul class="books">
+                                <li><a href="#">Luyện Thi Khối A00</a></li>
+                                <li><a href="#">Luyện Thi Khối B00</a></li>
+                                <li><a href="#">Luyện Thi Khối A01</a></li>
+                                <li><a href="#">Luyện Thi Khối D00</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">GIÁO TRÌNH CĐ - ĐH</a>
+                            <ul class="books">
+                                <li><a href="#">Công Nghệ Thông Tin</a></li>
+                                <li><a href="#">Kinh Tế</a></li>
+                                <li><a href="#">Y Dược</a></li>
+                                <li><a href="#">Kỹ Thuật</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tài Liệu Sưu Tầm</a>
+                            <ul class="books">
+                                <li><a href="#">Toán Học</a></li>
+                                <li><a href="#">Văn Học</a></li>
+                                <li><a href="#">Hóa Học</a></li>
+                                <li><a href="#">Sinh Học</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Dao Rọc Giấy</a></li>
+                                <li><a href="#">Kéo</a></li>
+                                <li><a href="#">Băng Keo</a></li>
+                                <li><a href="#">Bút Xóa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM ĐIỆN TỬ</a>
+                            <ul class="books">
+                                <li><a href="#">Máy Tính Cầm Tay</a></li>
+                                <li><a href="#">Đồng Hồ Bấm Giờ</a></li>
+                                <li><a href="#">Máy Chiếu</a></li>
+                                <li><a href="#">Máy fax</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BALO - CẶP SÁCH</a>
+                            <ul class="books">
+                                <li><a href="#">Balo Chống Gù</a></li>
+                                <li><a href="#">Balo Leo Núi</a></li>
+                                <li><a href="#">Cặp Quai Chéo</a></li>
+                                <li><a href="#">Balo Mini</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">Đồ Chơi</a>
+                    <ul class="subcontent">
+                        <li><a href="#">ĐỒ CHƠI NỔI BẬT</a>
+                            <ul class="books">
+                                <li><a href="#">Xếp Hình - Lắp Ghép</a></li>
+                                <li><a href="#">Đồ Chơi - Giáo Dục</a></li>
+                                <li><a href="#">Đồ Chơi - Điều Khiển</a></li>
+                                <li><a href="#">Board Game</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PHƯƠNG TIỆN CÁC LOẠI</a>
+                            <ul class="books">
+                                <li><a href="#">Ô Tô</a></li>
+                                <li><a href="#">Máy Bay</a></li>
+                                <li><a href="#">Tàu Thủy</a></li>
+                                <li><a href="#">Phương Tiện Khác</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MÔ HÌNH CÁC LOẠI</a>
+                            <ul class="books">
+                                <li><a href="#">Mô Hình Giấy</a></li>
+                                <li><a href="#">Mô Hình Gỗ</a></li>
+                                <li><a href="#">Mô Hình Nhân Vật</a></li>
+                                <li><a href="#">Mô Hình Động Vật</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ CHƠI THEO PHIM</a>
+                            <ul class="books">
+                                <li><a href="#">My Little Pony</a></li>
+                                <li><a href="#">Paw Patrol</a></li>
+                                <li><a href="#">Super Wings</a></li>
+                                <li><a href="#">Chiến Thần Vô Cực</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BỘT NẶN - ĐẤT NẶN</a>
+                            <ul class="books">
+                                <li><a href="#">Slime</a></li>
+                                <li><a href="#">Đất Nặn Màu</a></li>
+                                <li><a href="#">Cát Nặn</a></li>
+                                <li><a href="#">Bột Kim Tuyến</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BÚP BÊ</a>
+                            <ul class="books">
+                                <li><a href="#">Búp Bê Con Trai</a></li>
+                                <li><a href="#">Búp Bê Con Gái</a></li>
+                                <li><a href="#">Đồ Trang Trí Búp Bê</a></li>
+                                <li><a href="#">Quần Áo Búp Bê</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Gấu Bông</a>
+                            <ul class="books">
+                                <li><a href="#">Gấu To</a></li>
+                                <li><a href="#">Gấu Vừa</a></li>
+                                <li><a href="#">Gấu Nhỏ</a></li>
+                                <li><a href="#">Gấu Ôm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ CHƠI KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Đồ Chơi Tư Duy</a></li>
+                                <li><a href="#">Lego</a></li>
+                                <li><a href="#">Thế Giới Động Vật</a></li>
+                                <li><a href="#">Đồ Chơi Vận Động</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#">Bách Hóa Online-Lưu Niệm</a>
+                    <ul class="subcontent">
+                        <li><a href="#">ĐỒ DÙNG CÁ NHÂN</a>
+                            <ul class="books">
+                                <li><a href="#">Túi - Ví Thời Trang</a></li>
+                                <li><a href="#">Đồng Hồ</a></li>
+                                <li><a href="#">Phụ Kiện Du Lịch</a></li>
+                                <li><a href="#">Phụ Kiện Tóc</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ ĐIỆN GIA DỤNG</a>
+                            <ul class="books">
+                                <li><a href="#">Đèn Bàn</a></li>
+                                <li><a href="#">Đèn Ngủ</a></li>
+                                <li><a href="#">Đèn Pin</a></li>
+                                <li><a href="#">Đèn Trang Trí</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">NHÀ CỬA ĐỜI SỐNG</a>
+                            <ul class="books">
+                                <li><a href="#">Ly, Cốc, Bình Nước</a></li>
+                                <li><a href="#">Hộp Đựng Đồ Cá Nhân</a></li>
+                                <li><a href="#">Trang Trí Nhà Cửa</a></li>
+                                <li><a href="#">Sửa Chữa Nhà Cửa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">LƯU NIỆM</a>
+                            <ul class="books">
+                                <li><a href="#">Móc Khóa</a></li>
+                                <li><a href="#">Gương - Lược</a></li>
+                                <li><a href="#">Khung Hình</a></li>
+                                <li><a href="#">Tượng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ĐỒ ĐIỆN - CƠ GIA DỤNG</a>
+                            <ul class="books">
+                                <li><a href="#">Máy Khoan</a></li>
+                                <li><a href="#">Máy Bơm</a></li>
+                                <li><a href="#">Máy Hút Bụi</a></li>
+                                <li><a href="#">Máy Cưa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">THIẾT BỊ THÔNG MINH</a>
+                            <ul class="books">
+                                <li><a href="#">Robot Hút Bụi</a></li>
+                                <li><a href="#">Robot Lau Nhà</a></li>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Cảm Biến Hồng Ngoại</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SP NĂNG LƯỢNG</a>
+                            <ul class="books">
+                                <li><a href="#">Pin Năng Lượng Mặt Trời</a></li>
+                                <li><a href="#">Pin Tiểu</a></li>
+                                <li><a href="#">Pin Đại</a></li>
+                                <li><a href="#">Ắc Quy</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SẢN PHẨM KHÁC</a>
+                            <ul class="books">
+                                <li><a href="#">Thực Phẩm</a></li>
+                                <li><a href="#">Thiết Bị Số</a></li>
+                                <li><a href="#">Quạt Các Loại</a></li>
+                                <li><a href="#">Dụng Cụ Nhà Bếp</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#"><i class="fas fa-globe-americas"></i></a>
+                    <ul class="subcontent">
+                        <li class="trans"><a href="#">VIETNAMESE</a></li>
+                        <li class="trans"><a href="#">ENGLISH</a></li>
+                        <li class="trans"><a href="#">JAPANESE</a></li>
+                        <li class="trans"><a href="#">CHINESE</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <input type="button" value="X" class="navbtn" onClick="closeNav()"/>
+        </nav>
+        <!--POPUPLOGIN-->
+        <form class="content" id="id1">
+            <div class="login">
+                <h3>ĐĂNG NHẬP</h3>
+                <div class="flex">
+                    <div class="acc">
+                        <div class="block"> 
+                            <h4>Số điện thoại</h4>
+                            <input type="text" placeholder="Nhập số điện thoại" id="email"/>
+                        </div>
+                        <div class="block">
+                            <h4>Mật khẩu</h4>
+                            <input type="password" placeholder="Nhập mật khẩu" id="mk"/>
+                        </div>
+                        <a href="./recoverpwd.html" class="fgpwd"><h5 class="fgpwdtext">Quên mật khẩu?</h5></a>
+                        <input type="button" value="Đăng nhập" onclick="loGin()" class="dnbtn"/>
+                        <input type="button" value="Trở lại" onclick="closeForm()" class="thbtn"/>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="social">
+                        <h3>Hoặc</h3>
+                        <a href="#" class="fb">
+                            <i class="fa fa-facebook fa-fw"></i> Đăng nhập với Facebook
+                        </a>
+                        <a href="#" class="twitter">
+                            <i class="fa fa-twitter fa-fw"></i> Đăng nhập với Twitter
+                        </a>
+                        <a href="#" class="google">
+                            <i class="fa fa-google fa-fw"> </i> Đăng nhập với Google
+                        </a>
+                    </div>
+                </div>
+                <div class="endform">
+                    Chưa có tài khoản vui lòng <input type="button" value="Đăng ký" onclick="openForm1()" class="dkbtn"/>
+                </div>            
+            </div>
+        </form>
+        <form class="content" id="id2">
+            <div class="register">
+                <h2>ĐĂNG KÝ</h2>
+                <div class="block"> 
+                    <h4>Số điện thoại</h4>
+                    <input type="text" placeholder="Nhập số điện thoại" id="phone"/>
+                </div>
+                <div class="block"> 
+                    <h4>Mật khẩu</h4>
+                    <input type="password" placeholder="Nhập mật khẩu" id="otp"/>
+                </div>
+                <div class="block"> 
+                    <h4>Xác nhận mật khẩu</h4>
+                    <input type="password" placeholder="Nhập lại mật khẩu" id="mk1"/>
+                </div>
+                <input type="button" value="Đăng ký" onclick="reGister()" class="dkbtn1"/>
+                <input type="button" value="Trở lại" onclick="closeForm1()" class="thbtn1"/>
+            </div>
+        </form>
+        <!--end--> 
+        <section>
+            <!-- Mục lục -->
+            <div class="boxcontent">
+                <div class="list1">
+                    <ul class="list">
+                        <li><a href="./index.html">Trang Chủ</a></li>
+                        <li><i class="fas fa-angle-right"></i></li>
+                        <li>Balo - Cặp Học Sinh</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="product flex">
+                <div class="col40">
+                    <div class="bigproduct"><img id="mainImg" src="./images/green_1.jpg" alt="bag"></div>
+                    <div class="thumb flex">
+                        <div><img src="./images/green_1.jpg" alt="bag"></div>
+                        <div><img src="./images/green_2.jpg" alt="bag"></div>
+                        <div><img src="./images/green_3.jpg" alt="bag"></div>
+                        <div><img src="./images/green_4.jpg" alt="bag"></div>
+                    </div>
+                    <div class="buy flex">
+                        <input type="button" value="Thêm vào giỏ hàng" id="addtochart"/>
+                        <input type="button" value="Mua ngay" id="buynow"/>
+                    </div>
+                </div>
+                <div class="color10 col10">
+                    <h5 class="colorstt">Màu sắc</h5>
+                    <div class="buttons">
+                        <img data="Green" src="./images/Green.jpg" alt="color" id="green"/>
+                        <img data="Blue" src="./images/Blue.jpg" alt="color" id="blue"/>
+                    </div>
+                </div>
+                <div class="col50">
+                    <h2 class="namepro">Balo Chống Gù 779</h2>
+                    <h5>Nhà cung cấp: Cty Trương Vui</h5>
+                    <h5>Xuất xứ: Việt Nam</h5>
+                    <h5>Thương hiệu: Mr.Vui</h5>
+                    <h5>Nơi sản xuất:Trung Quốc</h5>
+                    <div class="productprice flex">
+                        <h3 class="productleft price">415.200đ</h3>
+                        <h3 class="productright thruprice">519.000đ</h3>
+                    </div>
+                    <div class="km">
+                        <i class="fas fa-check-circle"></i>  Kể từ ngày 01/09/2020, đơn hàng từ 250K sẽ được miễn phí vận chuyển trên toàn quốc
+                        <br></br>
+                        <i class="fas fa-check-circle"></i>  Giảm ngay 40K cho đơn hàng từ 250K - Áp dụng khi thanh toán qua VNPAY
+                        <br></br>
+                        <i class="fas fa-check-circle"></i>  Giảm 30K cho đơn hàng từ 60K - Áp dụng khi thanh toán bằng Ví ZaloPay
+                        <br></br>
+                        <i class="fas fa-check-circle"></i>  Mua 1 sản phẩm bất kỳ của Mr. Vui được tặng 1 balo mini
+                        <br></br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="privacy flex">
+                <div class="iconpry flex">
+                    <i class="fas fa-store-alt"></i>
+                    <a href="#"><h5>Chính Sách Khách Sỉ</h5></a>
+                </div>
+                <div class="iconpry flex">
+                    <i class="fas fa-truck-moving"></i>
+                    <a href="#"><h5>Thời Gian Giao Hàng</h5></a>
+                </div>
+                <div class="iconpry flex">
+                    <i class="fas fa-exchange-alt"></i>
+                    <a href="#"><h5>Chính Sách Đổi Trả</h5></a>
+                </div>
+                <div class="iconpry flex">
+                    <i class="fas fa-comments"></i>
+                    <a href="#"><h5>Review - Nhận HHpoint</h5></a>
+                </div>
+            </div>
+            
+            <div class="relatedproduct">
+                <div class="title">
+                    <h4>SẢN PHẨM LIÊN QUAN</h4>
+                </div>
+                <div class="content flex">
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo2.jpg" alt="book">
+                            <figcaption class="tt">Ba Lô Laptop 748 Xám Chì - BLLT747-14 XAMCHI</figcaption>
+                            <figcaption class="price">380.000đ</figcaption>
+                            <figcaption class="thruprice">475.000đ</figcaption>
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo3.jpg" alt="book">
+                            <figcaption class="tt">Balo Bé Gái 719 Xanh Biển - Đen - BLH719-SG XANHBIEN_DEN</figcaption>
+                            <figcaption class="price">439.200đ</figcaption>
+                            <figcaption class="thruprice">549.000đ</figcaption>
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo4.jpg" alt="book">
+                            <figcaption class="tt">Ba Lô Thế Giới Trò Chơi Clever Hippo BFG1103 - Đen</figcaption>
+                            <figcaption class="price">359.100đ</figcaption>
+                            <figcaption class="thruprice">399.000đ</figcaption>
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo5.jpg" alt="book">
+                            <figcaption class="tt">Ba Lô Compact - My Little Pony Sức Mạnh Tình Bạn - BP1108</figcaption>
+                            <figcaption class="price">512.100đ</figcaption>
+                            <figcaption class="thruprice">569.000đ</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="../images/balo6.jpg" alt="book">
+                            <figcaption class="tt">Ba Lô Teen 733 Xanh Đen Xám - BLTEEN733 XANHDEN_XAM</figcaption>
+                            <figcaption class="price">340.000đ</figcaption>
+                            <figcaption class="thruprice">425.000đ</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="xemthem1">
+                    <div class="xemthem">
+                        <a href="#">Xem Thêm
+                        </a>
+                    </div>
+                </div>  
+            </div>
+            <div class="inforproduct">
+                <div class="infor">
+                    <h3 class="infortt">Thông tin sản phẩm</h3>
+                    <div class="detail flex">
+                        <div class="leftinfor col20">
+                            <h5>Mã hàng:</h5>
+                            <h5>Tên Nhà Cung Cấp:</h5>
+                            <h5>Thương Hiệu:</h5>
+                            <h5>Xuất Xứ Thương Hiệu:</h5>
+                            <h5>Nơi Sản Xuất:</h5>
+                            <h5>Bảo hành:</h5>
+                            <h5>Màu sắc:</h5>
+                            <h5>Chất liệu:</h5>
+                            <h5>Trọng lượng (gr):</h5>
+                            <h5>Kích thước:</h5>
+                            <h5>Sản phẩm hiển thị trong:</h5>
+                            <h5>Sản phẩm bán chạy nhất:</h5>
+                        </div>
+                        <div class="rightinfor col80">
+                            <h5>8935269804064-mau3</h5>
+                            <h5>Cty Trương Vui</h5>
+                            <h5>Mr.Vui</h5>
+                            <h5>Việt Nam</h5>
+                            <h5>Trung Quốc</h5>
+                            <h5>2 năm</h5>
+                            <h5>Lục - Đen, Xanh - Đỏ</h5>
+                            <h5>Nhựa, Vải</h5>
+                            <h5>780</h5>
+                            <h5>38 x 28 x 15 cm</h5>
+                            <h5>Cty Trương Vui</h5>
+                            <h5>Top 100 sản phẩm Cặp , Ba Lô, Túi Xách bán chạy của tháng</h5>
+                        </div>
+                    </div>
+                    <hr></hr>
+                    <h4 class="namepro">Balo Chống Gù 779</h4>
+                    <div class="inforafter">
+                        <p>Là dụng cụ học tập không thể thiếu cho các bé học sinh. Với độ tuổi các bé Tiểu học xương còn yếu, nếu hàng ngày phải mang vác nhiều sách vở, đồ dùng trên lưng lâu ngày sẽ ảnh hưởng đến quá trình phát triển xương của bé. Vì vậy chiếc balo chống gù 779 là lựa chọn hoàn hảo cho các bé.</p>
+                        <p>Balo thiết kế có thể gắp gọn dễ dàng trong quá trình vệ sinh balo  hoặc để bảo quản.</p>           
+                        <p>Với thiết kế trọng lượng nhẹ, kiểu dáng hình hộp giúp balo phân tán lực đều trên lưng và vai bé.</p>  
+                        <p>Ngoài ra, balo được trang trí với màu sắc và hình ảnh nổi bật, tạo cảm giác thích thú cho bé mỗi khi đến trường.</p>   
+                        <p>Được sử dụng chất liệu Polyester với ưu điểm nổi bật như siêu nhẹ, chống nước, bền màu theo thời gian,... Balo bảo vệ tốt cho các đồ dùng và sách vở của bé bên trong.</p>   
+                        <p>Ngoài ra, bên trong balo được lót với lớp vải Poly Oxford 100% chống bám mùi, chống ẩm,...</p>  
+                        <p>Balo với 1 ngăn chính và 1 ngăn nhỏ bên ngoài.</p>   
+                        <p>Ngăn chính có kích thước vừa phải, có dây thun gàng sách vở, hạn chế tình trạng xô lệch khi các bé chạy nhảy, chơi đùa,...</p>   
+                        <p>Ngăn phụ phía trước kích thước nhỏ, bé có thể đựng những vật có kích thước nhỏ như: bút viết, cục tẩy,...</p>    
+                        <p>Dây đeo được may thêm một lớp đệm mút nhẹ, được may bảng to để phân tán trọng lực đều lên vai bé. Phụ huynh có thể dễ dàng điều chỉnh dây đeo phù hợp với vóc dáng của bé.</p> 
+                        <hr></hr>
+                        <h4 class="namepro">HƯỚNG DẪN SỬ DỤNG</h4>
+                        <p>- Không ngâm giặc quá lâu trong nước.</p>
+                        <p>- Không dùng chất tẩy rửa.</p>                             
+                        <p>- Không là (ủi).</p>                           
+                        <p>- Không sấy khô.</p>                       
+                        <p>- Không chứa vật quá tải trọng cho phép.</p>                          
+                        <p>- Bảo quản nơi khô ráo, thoáng mát.</p>
+                    </div>      
+                </div>
+                <h3 class="infortt">Khách hàng nhận xét</h3>
+                <div class="reaction flex">
+                    <div class="rate1 col20">
+                       <h2>0/5</h2>
+                       <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span>
+                       <h5>0 review</h5>
+                    </div>
+                    <div class="rate2 col40">
+                        <div class="starrate flex">
+                            <div class="col20">5 sao</div>
+                            <div class="progressbar1 col80">
+                                <div class="loading1"></div>
+                            </div>
+                        </div>
+                        <div class="starrate flex">
+                            <div class="col20">4 sao</div>
+                            <div class="progressbar1 col80">
+                                <div class="loading2"></div>
+                            </div>
+                        </div>
+                        <div class="starrate flex">
+                            <div class="col20">3 sao</div>
+                            <div class="progressbar1 col80">
+                                <div class="loading3"></div>
+                            </div>
+                        </div>
+                        <div class="starrate flex">
+                            <div class="col20">2 sao</div>
+                            <div class="progressbar1 col80">
+                                <div class="loading4"></div>
+                            </div>
+                        </div>
+                        <div class="starrate flex">
+                            <div class="col20">1 sao</div>
+                            <div class="progressbar1 col80">
+                                <div class="loading5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate3 col40">
+                        <h4>Chỉ có thành viên mới có thể viết nhận xét.Vui lòng <a href="#" onclick="openForm()">đăng nhập</a>.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="hint">
+                <div class="title">
+                    <h4>GỢI Ý</h4>
+                </div>
+                <div class="content flex">
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo7.jpg" alt="book">
+                            <figcaption class="tt">Balo Bé Trai 751 Đỏ - Xanh Đen - BLH751 DO_XANHDEN</figcaption>
+                            <figcaption class="price">319.200đ</figcaption>
+                            <figcaption class="thruprice">399.000đ</figcaption>
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo8.jpg" alt="book">
+                            <figcaption class="tt">Balo Bé Trai 772 Xanh Đen - BLH717-ST XANHDEN</figcaption>
+                            <figcaption class="price">398.400đ</figcaption>
+                            <figcaption class="thruprice">498.000đ</figcaption>
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo9.jpg" alt="book">
+                            <figcaption class="tt">Balo Chống Gù Lớp Học Mật Ngữ Milita Pink Lucky Stars - A-BL10001</figcaption>
+                            <figcaption class="price">592.000đ</figcaption>
+                            <figcaption class="thruprice">600.000đ</figcaption>
+                        </a>
+                    </figure> 
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo10.jpg" alt="book">
+                            <figcaption class="tt">Balo Bé Trai 718 Xanh Đen - Vàng - BLH718-ST XANHDEN_VANG</figcaption>
+                            <figcaption class="price">279.200đ</figcaption>
+                            <figcaption class="thruprice">349.000đ</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo11.jpg" alt="book">
+                            <figcaption class="tt">Balo Học Sinh 789 - Cá Heo - Xanh Biển</figcaption>
+                            <figcaption class="price">199.200đ</figcaption>
+                            <figcaption class="thruprice">249.000đ</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo12.jpg" alt="book">
+                            <figcaption class="tt">Ba Lô Laptop 753 Màu Đen - BLLT753-15</figcaption>
+                            <figcaption class="price">460.000đ</figcaption>
+                            <figcaption class="thruprice">575.000đ</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo13.jpg" alt="book">
+                            <figcaption class="tt">Balo Bé Trai 790 Khủng Long - Xanh Da Trời</figcaption>
+                            <figcaption class="price">319.200đ</figcaption>
+                            <figcaption class="thruprice">399.000đ</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo14.jpg" alt="book">
+                            <figcaption class="tt">Balo Chống Gù ĐÓM Khám Phá - E-BL10000</figcaption>
+                            <figcaption class="price">428.400đ</figcaption>
+                            <figcaption class="thruprice">595.000đ</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo15.jpg" alt="book">
+                            <figcaption class="tt">Ba Lô Fancy - Thủ Lĩnh Optimus - BT1206</figcaption>
+                            <figcaption class="price">254.150đ</figcaption>
+                            <figcaption class="thruprice">299.000đ</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="#">
+                            <img src="./images/balo16.jpg" alt="book">
+                            <figcaption class="tt">Ba Lô Easy Go - Cô Nàng Ngọt Ngào - BC0102</figcaption>
+                            <figcaption class="price">332.100đ</figcaption>
+                            <figcaption class="thruprice">369.000đ</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="xemthem1">
+                    <div class="xemthem">
+                        <a href="#">Xem Thêm</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="sponsor">
+                <img src="./images/runbanner.jpg" alt="sponsor"/>
+            </div>
+            <!-- SENDTOEMAIL -->
+            <div class="sendtoemail flex">
+                <div class="sendbutton col30 flex">
+                    <div class="col20"><img src="./images/user.png" alt="user"/></div>
+                    <div class="col80"><a href="mailto: HHbook@gmail.com?subject=Thắc Mắc Về&body=Nội Dung: ">Gửi Thắc Mắc Của Bạn Cho Chúng Tôi</a></div>
+                </div>
+                <div class="map col70"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6378.968759192832!2d106.65510940858746!3d10.793043910543405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752934edfc0855%3A0x87819e9465e0a2e3!2zMzUsIDI4IEzDqiBCw6xuaCwgUGjGsOG7nW5nIDQsIFTDom4gQsOsbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1600068575813!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+            </div>
+            <!-- end -->
+             <!--SEEN-->
+            <div class="watched">
+                <ul class="watched1">
+                    <li class="watched2">
+                       <span class="clock">
+                          <img src="./images/iconclock.png" alt="seenproduct"/>
+                       </span>
+                       <span class="title">Sản phẩm đã xem</span>
+                    </li>
+                </ul>    
+            </div>
+            <!-- end   -->
+            <!-- SHARE -->
+            <input type="button" value=">" class="share-on" onClick="shareOn()"/>
+            <div class="share" id="share-on-off">
+                <ul>
+                    <li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.fahasa.com/?attempt=1"><i class="fab fa-facebook"></i></a> </li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus"></i></a> </li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>     
+                    <input type="button" value="<" class="share-off" onClick="shareOff()"/>
+                </ul>
+            </div>
+            <!-- GOTOTOP -->
+            <a id="scrollTop"><img src="./images/top.png" alt="top"/></a>
+            <!-- end -->
+        </section>
+        <input type="button" value="-" class="navbtn" onClick="openFoot()"/>
+        <footer id="footer-off-on">
+        <input type="button" value="X" class="navbtn" onClick="closeFoot()"/>
+            <div class="head">
+                <div id="th">
+                    <h4>Trang bán sách uy tín và chất lượng hàng đầu Việt Nam</h4>
+                </div>
+                <div id="td">
+                    <h4>HHbookstore</h4>
+                </div>
+            </div>
+            <div class="body">
+                <div class="leftfooter col30">
+                    <h4> Sách trực tuyến quốc gia </h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on()"/>
+                    <ul id="footer">
+                        <li>Chỉ đạo tổ chức: Bộ Thông tin và Truyền thông</li>
+                        <li>Đơn vị quản lý: Cục Xuất bản - In - Phát hành</li>
+                        <li>NXB Thông tin &amp; Truyền thông</li>
+                        <li>Đơn vị vận hành: Vitranet24</li>
+                        <li>Đơn vị hỗ trợ: Cục Tin học hóa</li>
+                        <input type="button" value="x" class="navbtn-foot" onClick="footer_off()"/>
+                    </ul>
+                </div>
+                <div class="col19">
+                    <h4>Quản lý tài khoản</h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on1()"/>
+                    <ul id="footer1">
+                        <li><a href="#">Tạo tài khoản </a></li>
+                        <li><a href="#">Quản lý đơn hàng</a></li>
+                        <li><a href="#">Đăng ký giới thiệu sách</a></li>
+                        <li><a href="#">Thay đổi thông tin tài khoản</a></li>
+                        <input type="button" value="x" class="navbtn-foot" onClick="footer_off1()"/>
+                    </ul>
+                </div>
+                <div class="col19">
+                    <h4>Giới thiệu</h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on2()"/>
+                    <ul id="footer2">
+                    <li><a href="#">Không gian chung</a></li>
+                    <li><a href="#">Khu sách</a></li>
+                    <li><a href="#">Ảnh - video</a></li>
+                    <li><a href="#">Sự kiện</a></li>
+                    <input type="button" value="x" class="navbtn-foot" onClick="footer_off2()"/>
+                    </ul>
+                </div>
+                <div class="col19">
+                    <h4>Hỗ trợ</h4><input type="button" value="+" class="navbtn-foot" onClick="footer_on3()"/>
+                    <ul id="footer3"> 
+                        <li><a href="#">Quy định mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Phương thức vận chuyển</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <input type="button" value="x" class="navbtn-foot" onClick="footer_off3()"/>
+                    </ul>                                      
+                </div>
+                <div class="col15">
+                <h4>Hotline:0247 300 1369</h4>     
+                </div>
+            </div>
+            <div class="end">
+                <div id="tt">
+                    <img src="./images/tt1.png" alt="TT"> 
+                    <img src="./images/tt2.png" alt="TT">
+                    <img src="./images/tt3.png" alt="TT">
+                    <img src="./images/tt4.png" alt="TT">
+                </div>
+                <div id="ht">
+                    <img src="./images/bo.jpg" alt="bo">
+                    <img src="./images/cmc_cloud.jpg" alt="CMC">
+                    <img src="./images/cucphathanh.jpg" alt="CPT">
+                    <img src="./images/cuctinhoa.jpg" alt="CTH">
+                    <img src="./images/layer1155.png" alt="VNPOST">
+                </div>
+            </div>
+            </div>
+            <div class="author">
+                <h5>&copy; Powered by NDH & NTH</h5>
+            </div>
+        </footer>
+    </body>
+</html>
+        
+        
+    
